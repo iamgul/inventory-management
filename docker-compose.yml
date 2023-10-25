@@ -1,0 +1,23 @@
+#version: '3.7'
+#
+#services:
+#  quarkus-app:
+#    build:
+#      context: .
+#      dockerfile: src/main/docker/Dockerfile.jvm
+#    ports:
+#      - 8080:8080
+#    links:
+#      - mysql
+#    environment:
+#      QUARKUS_DATASOURCE_URL: jdbc:mysql://mysql:3306/inventory
+#      QUARKUS_DATASOURCE_USERNAME: root
+#      QUARKUS_DATASOURCE_PASSWORD: root
+#
+#  mysql:
+#    image: mysql:latest
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+#      MYSQL_DATABASE: inventory
+#    ports:
+#      - 3306:3306
